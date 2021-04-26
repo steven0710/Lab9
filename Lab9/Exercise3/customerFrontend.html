@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet">
+</head>
+<body>
+    <form action="customerBackend.php" method="post" onsubmit = "return check(event);">
+        Name:     <input type="text" name="name" id="name"><br>
+        Password: <input type="text" name="password" id="password"><br>
+        
+        <h2>Items List</h2>
+        
+        Apple($3)  <input type="number" name="Apple" id="Apple" value = "0">
+        <br>
+        Orange($4) <input type="number" name="Orange" id="Orange" value = "0">
+        <br>
+        Cheese ($5)    <input type="number" name="Cheese" id="Cheese" value = "0">
+        <br>
+
+        <h2>Shipping Options</h2>
+
+        <div>
+            <input type="radio" name="typesofShipping" id="free" value="free" />
+            <label for="free">A) Free(7 day shipping)</label>
+            <br>
+            <input type="radio" name="typesofShipping" id="overNight" value="overnight" />
+            <label for="overNight">B) $50.00(overnight shipping)</label>
+            <br>
+            <input type="radio" name="typesofShipping" id="threeDay" value="three day" />
+            <label for="threeDay">C) $5.00(three day shipping)</label>
+        </div>
+
+
+        <button type="submit">Submit
+        <br>
+        <Button type="reset" onclick = "resetParameters()">Reset
+    </form>
+</body>
+<script type="text/javascript" src="formChecker.js"></script>
+</html>
